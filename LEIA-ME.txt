@@ -8,3 +8,7 @@ MEU PAINEL — preparação da nuvem
 O protótipo atual ainda usa localStorage. Executar o SQL prepara o banco, mas não ativa sincronização por si só. A próxima etapa é conectar Supabase Auth/Database no frontend e publicar o PWA.
 
 Use apenas Project URL e Publishable Key no frontend. Nunca coloque service_role ou sb_secret no código ou no GitHub.
+
+
+IDENTIDADE VISUAL
+A logo Léo Penha foi adicionada ao cabeçalho do Meu Painel. Os ícones 192x192 e 512x512 foram adicionados para a instalação no celular. Ao atualizar no GitHub, envie também logo-leo-penha.png, icon-192.png e icon-512.png, além dos arquivos atualizados index.html, manifest.webmanifest e sw.js.
