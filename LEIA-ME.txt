@@ -1,16 +1,1 @@
-MEU PAINEL — VERSÃO COM SUPABASE
-
-1. Extraia este pacote.
-2. Envie/substitua TODOS os arquivos da pasta meu-painel na raiz do seu repositório GitHub.
-3. O arquivo index.html agora inclui conexão com o projeto Supabase configurado, cadastro/login por e-mail e senha e sincronização das tabelas workouts, meals, finance_entries e tasks.
-4. O banco deve ter recebido anteriormente o arquivo supabase-schema.sql e as políticas RLS.
-5. No Supabase > Authentication > URL Configuration, configure Site URL e Redirect URLs para o endereço HTTPS onde o app será publicado. Enquanto não houver URL publicada, o cadastro e login ainda podem ser testados pela prévia/host atual conforme a configuração do Supabase.
-
-SEGURANÇA:
-- A chave sb_publishable é própria para uso no navegador. Nunca coloque service_role ou sb_secret no HTML.
-- As tabelas usam RLS e cada registro fica associado ao usuário autenticado.
-- Este pacote não publica o site. O repositório GitHub precisa ser servido por hospedagem HTTPS (ex.: GitHub Pages, Netlify ou Vercel).
-
-OBSERVAÇÃO:
-- Ao entrar, os dados são carregados do Supabase. Ao salvar registros, o app envia alterações para a nuvem. Exclusões também são refletidas na nuvem.
-- Dados antigos que existiam apenas no localStorage deste navegador não são enviados automaticamente para a conta; mantenha um backup antes de limpar os dados do navegador.
+O site desta pasta é a interface inicial do painel. Antes de publicar, configure a Edge Function e substitua API_URL no index.html pelo endpoint da função. Nunca coloque service_role no HTML.
