@@ -1,0 +1,10 @@
+MEU PAINEL — preparação da nuvem
+
+1) Supabase: abra SQL Editor > New query.
+2) Abra supabase-schema.sql, copie todo o conteúdo, cole e clique em Run.
+3) O script cria as tabelas workouts, meals, finance_entries e tasks.
+4) Todas as tabelas têm Row Level Security e políticas que limitam cada registro ao usuário autenticado.
+
+O protótipo atual ainda usa localStorage. Executar o SQL prepara o banco, mas não ativa sincronização por si só. A próxima etapa é conectar Supabase Auth/Database no frontend e publicar o PWA.
+
+Use apenas Project URL e Publishable Key no frontend. Nunca coloque service_role ou sb_secret no código ou no GitHub.
